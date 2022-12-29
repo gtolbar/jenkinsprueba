@@ -1,21 +1,10 @@
 pipeline {
     agent any
-	
-    options{
-        timeout(time: 2,unit: 'MINUTES')
-	}
-	
     stages {
-        stage('mostrar contenido') {
+        stage('Hello') {
             steps {
-                cat README.md
+                echo 'Hello World'
             }
         }
-        stage('Hola mundo') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-
     }
 }
