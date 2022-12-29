@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                cat README.md
+                echo 'Hello World' && ls -ll
             }
         }
         stage('Hello2') {
             steps {
-                echo 'Hello World2'
+                echo 'Hello World 2'
             }
         }		
     }
